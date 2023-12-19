@@ -1,0 +1,27 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;}
+button{
+    width: 180px;
+    height: 50px;
+    background-color: aqua;
+
+}
+button:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+h2{
+    color: blueviolet;
+}
+p{
+    font-weight: bold;
+    font-style: italic;
+}
+input{
+    width: 180px;
+    height: 30px;
+}
+#cuentaRegresiva{
+    border: 1px solid red;
+}
