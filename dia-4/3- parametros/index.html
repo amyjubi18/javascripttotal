@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametros</title>
+</head>
+<body>
+    <h1>Parametros en funciones</h1>
+    <p>Primer numero</p>
+    <input type="number" id="primerNumero">
+    <p>Segundo numero</p>
+    <input type="number" id="segundoNumero">
+    <button onclick="mostrarResultado()">Calcular</button>
+    <h2 id="textoResultado"></h2>
+    <script>
+        function sumar(numero1, numero2){
+            //signo + en cada parametros para sumar
+            resultado = +numero1 + +numero2;
+            return resultado;
+        }
+        /* alert(sumar(50, 115)); */
+        function mostrarResultado(){
+            let elementoNumero1 = document.getElementById("primerNumero");
+            let elementoNumero2 = document.getElementById("segundoNumero");
+            let elementoTexto = document.getElementById("textoResultado");
+            let elementoSuma = sumar(elementoNumero1.value, elementoNumero2.value);
+            elementoTexto.textContent = elementoSuma;
+        }
+        /*function mostrarMensaje(mensaje) {
+    alert(mensaje);
+}*/
+    </script>
+</body>
+</html>

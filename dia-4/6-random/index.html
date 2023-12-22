@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+<body>
+    <!-- math.random variables decimales aleatorias -->
+    <button onclick="crearAleatorio(10, 15)">Dama un numero aleatorio</button>
+    <h2>Numero aleatorio: <span id="textoAleatorio">---</span></h2>
+    <script>
+        let elementoAleatorio = document.getElementById("textoAleatorio");
+        function crearAleatorio(minimo, maximo){
+            maximo = maximo + 1;
+            resultado = Math.floor( Math.random()* (maximo - minimo) + minimo)
+            // elementoAleatorio.textContent =Math.floor( Math.random()*maximo);
+            elementoAleatorio.textContent = resultado;
+        }
+        /* numero entre 10 y 50
+        let aleatorio = Math.floor(Math.random() * (51-10) + 10);
+        let aleatorio = Math.floor(Math.random()*(101-50)+50); */
+    </script>
+</body>
+</html>

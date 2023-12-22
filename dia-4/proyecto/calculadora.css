@@ -1,0 +1,49 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#content{
+    border: 1px solid blue;
+    padding: 10px;
+    width: 40%;
+    background-color: darkgray;
+}
+input{
+    height: 20px;
+    width: 80px;
+    font-size: 1rem;
+    
+}
+button{
+    height: 35px;
+    width: 42px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    background-color: cornflowerblue;
+}
+button:hover{
+    background-color: rgb(47, 79, 139);
+    cursor: pointer;
+}
+.doble button{
+    height: 35px;
+    width: 88px;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+.doble .dobles button{
+    
+}
+.triple button{
+    height: 35px;
+    width: 56px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#campoResultado{
+    height: 20px;
+    width: 170px;
+    font-size: 1rem;
+}
