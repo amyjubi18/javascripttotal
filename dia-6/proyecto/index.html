@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Boletin</title>
+</head>
+<body style="background-color: darkblue; color: aliceblue;" onload="listarNotas()">
+    <div class="logo">
+<img src="Diseno-sin-titulo-1.png" alt="" width="30%" style="justify-content: center; margin-left: 200px;">
+<h2 style="color: aquamarine; text-transform:uppercase; text-align: center;">Bienvenido a tu boletin estudiantil</h2>
+    </div>
+    <div class="estudiante" style="color: darkkhaki;">
+        <h3>Alumno: Amanda Garcia</h3>
+    </div>
+    <h4 style="color: aliceblue; font-size: 15px;">Notas:</h4>
+    <ul id="listaNotas" style="font-size: 25px;"></ul>
+    <div class="info">
+        <h4 style="color: aliceblue;">Promedio: <span id="promedio" style="color: aliceblue; font-size: 25px;"></span></h4>
+        <button onclick="calcularPromedio()">Calcular promedio</button>
+
+
+        <h4 style="color: aliceblue;">Notas mas alta: <span id="nota" style="color: aliceblue; font-size: 25px;"></span></h4>
+        <button onclick="notaMasAlta()">Buscar nota mas alta</button>
+
+        <h4 style="color: aliceblue;">¿Hubo algun plazo? <span id="aplazo" style="color: aliceblue; font-size: 25px;"></span></h4>
+        <button onclick="hayAplazo()">Consultar aplazo</button>
+    </div>
+</body>
+</html>
