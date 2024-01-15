@@ -20,6 +20,17 @@
         eliminado
         //eliminar el primer elemento del array
         misAmigos.shift();
+        misAmigos;
+        //agregar amigos al principio
+        misAmigos.unshift('amanda')
+        //agregar amigos al final
+        misAmigos.push('amanda')
+        //eliminar arrays
+        misAmigos.splice(2,3)
+        //recorrer el array, callback funcion anonima
+        misAmigos.forEach(function(amigo){console.log(amigo)})
+        //recorrer con otro parametro opcional
+        misAmigos.forEach(function(amigo, index){console.log(index + ":  " + amigo)})
          */
     </script>
 </body>
