@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otras formas de crear objetos</title>
+</head>
+<body>
+    <script>
+        //constructores
+        //objetos Object
+        let coche1= new Object();
+        //propiedad
+        coche1.marca = 'chevrolet';
+        coche1['modelo']= 'prisma';
+        coche1.encender = function (){
+            alert("coche encendido");
+        };
+
+        let perro1 = new Object({nombre: 'Simba'});
+
+        let coche2 =    Object.create(coche1);
+
+
+
+        /*         let automovil1 = { 
+            marca: 'Ford', 
+            modelo: 'Fiesta', 
+            anio: 2015, 
+            arrancar() { console.log("En marcha") }
+        };
+
+        let automovil2 = Object.create(automovil1); */
+    </script>
+</body>
+</html>

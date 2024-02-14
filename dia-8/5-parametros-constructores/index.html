@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametros de Constructores</title>
+</head>
+<body>
+    <script>
+        //objeto en mayuscula, parametros del constructor
+       function Perro(raza, edad){
+        this.patas = 4;
+        this.raza = raza;
+        this.edad = edad;
+        this.ladrar = function(){
+            console.log("Guau");
+        }
+       };
+       //parametros
+    let simba = new Perro("Shih Tzu", 4 );
+    let reina = new Perro("Caniche", 15);
+    let sky = new Perro("Pitbull", 1);
+
+    function Empleado(nombre, apellido, edad, cargo){
+        this.nombre =nombre;
+        this.apellido =apellido;
+        this.edad =edad;
+        this.cargo = cargo;
+        this.presentarse = function(){
+            console.log(`Mi Nombre es ${this.nombre} ${this.apellido}, soy ${this.cargo}, y tengo ${this.edad} años de edad`);
+        };
+    };
+
+        /* let empleado1 = new Empleado("javier", "perez", 35, "gerente de market")
+        undefined
+        empleado1.nombre
+        'javier'
+        empleado1.presentarse()
+        index.html:30 Mi Nombre es javier perez, soy gerente de market, y tengo 35 años de edad
+        undefined */
+
+// 'Shih Tzu'
+// reina.edad
+// 15
+// sky
+// Perro {patas: 4, raza: 'Pitbull', edad: 1, ladrar: ƒ}
+// sky.raza
+// 'Pitbull'
+    </script>
+</body>
+</html>

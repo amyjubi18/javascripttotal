@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop For in</title>
+</head>
+<body>
+    <script>
+        //iterar los elementos internos de un objeto
+        function Perro(raza, edad, color){
+            this.patas = 4;
+            this.raza = raza;
+            this.edad = edad;
+            this.color = color;
+            this.ladrar = function (){
+                console.log("Guau");
+            };
+        };
+        let simba = new Perro("Shih tzu", 4, "Marron");
+        let reina = new Perro("Caniche", 15, "Blanco");
+        let sky = new Perro("Pitbull", 1, "Beige");
+        for (let caracteristica in sky){
+            console.log(caracteristica + ": " + sky[caracteristica]);
+        }
+            /* patas: 4
+             raza: Pitbull
+             edad: 1
+             color: Beige
+             ladrar: function (){
+                            console.log("Guau");
+                        } */
+    </script>
+</body>
+</html>

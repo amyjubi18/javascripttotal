@@ -1,0 +1,23 @@
+*{
+    margin: 10px;
+}
+h2{
+    color: brown;
+}
+p{
+font-weight: bold;
+}
+button{
+    padding: 10px;
+    background-color: blue;
+    color: aliceblue;
+    width: 200px;
+
+}
+button:hover{
+    background-color: rgb(77, 77, 240);
+    cursor: pointer;
+}
+input{
+    padding: 8px;
+}
