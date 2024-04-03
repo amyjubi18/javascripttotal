@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Prototípicos</title>
+</head>
+<body>
+    <script>
+        function Libro(autor, titulo, cantPaginas){
+            this.autor = autor;
+            this.titulo = titulo;
+            this.cantPaginas = cantPaginas;
+        }
+        let libro1 = new Libro("Stephen King", "Carrie", 524);
+//valueOf()
+
+/*
+function Futbolista(nombre, equipo, posicion){
+    this.nombre = nombre;
+    this.equipo = equipo;
+    this.posicion = posicion;
+}
+
+function prototipos() {
+    let futbolita1 = new Futbolista("Lionel Messi", "PSG", "Delantero");
+    console.log(futbolita1.valueOf())
+}
+*/
+
+
+/*let libro2 = Object.create(libro1)
+undefined
+libro2.__proto__
+Libro {autor: 'Stephen King', titulo: 'Carrie', cantPaginas: 524}*/
+
+
+
+/*
+let libro2 = Object.create(libro1)
+undefined
+libro2.constructor
+ƒ Libro(autor, titulo, cantPaginas){
+            this.autor = autor;
+            this.titulo = titulo;
+            this.cantPaginas = cantPaginas;
+        }
+let libro3 = new libro1.constructor("king", "jardin", 350)
+undefined
+libro3.titulo
+'jardin'
+console.log(empleado1.prototype)
+libro3.constructor.name*/
+
+
+/* REVISANDO CONTRUCTOR
+
+function Empleado(nombre, antiguedad, sueldo){
+    this.nombre = nombre;
+    this.antiguedad = antiguedad;
+    this.sueldo = sueldo;
+}
+let empleado1 = new Empleado("amanda", "2 años", 115);
+
+let empleado2 = Object.create(empleado1);
+console.log(empleado1.prototype)
+
+*/
+
+    </script>
+</body>
+</html>

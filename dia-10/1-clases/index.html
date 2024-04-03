@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+</head>
+<body>
+    <script>
+
+
+        
+        //DECLARACION DE CLASE
+        class Papel{
+            constructor(alto, ancho){
+                this.alto= alto;
+                this.ancho = ancho;
+            }
+        }
+        /*Papel.name
+        'Papel'
+        let miPapel = new Papel(4, 5)
+        undefined
+        miPapel.ancho
+        5*/
+
+        //EXPRESION DE CLASE ANONIMA
+        let PapelA = class{
+            constructor(alto, ancho){
+                this.alto= alto;
+                this.ancho = ancho;
+            }
+        }
+
+        /*
+        let papel33 = new PapelA(5, 8)
+        undefined
+        papel33.alto
+        5
+        */
+
+        //EXPRESION DE CLASE NOMBRADA
+        let PapelB = class PapelX{
+            constructor(alto, ancho){
+                this.alto= alto;
+                this.ancho = ancho;
+            }
+        }
+
+        let papelZ = new Papel(5,3);
+        /*
+        PapelA.name
+        'PapelA'
+        PapelB.name
+        'PapelX'
+
+        papelZ.alto
+        5
+        */
+
+    </script>
+</body>
+</html>

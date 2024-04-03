@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    color:crimson;
+    text-shadow: 2px 2px skyblue;
+    font-size: 40px;
+}
+
+button{
+    padding: 30px;
+    background-color:darkorchid ;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px black;
+    margin-left: 120px;
+}
+
+button:hover{
+    background-color:rgb(128, 81, 151) ;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;    
+    background-color: gainsboro;
+    margin: 0;
+    padding: 10px;
+
+}
+ ul{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+ }
